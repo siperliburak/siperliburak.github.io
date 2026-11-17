@@ -1,0 +1,58 @@
+{{ define "main" }}
+<section class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">{{ .Site.Params.role }} <span class="eyebrow-dot">/</span> {{ .Site.Params.institution }}</p>
+    <h1>How do people understand democracy — and how do those understandings shape politics?</h1>
+    <div class="intro">{{ .Content }}</div>
+    <div class="hero-links">
+      <a class="button-link" href="{{ "research/" | relURL }}">Explore my research <span>↗</span></a>
+      <a class="text-link" href="{{ "cv/" | relURL }}">Curriculum vitae <span>↗</span></a>
+    </div>
+  </div>
+  <div class="hero-visual" aria-hidden="true">
+    <div class="visual-topline"><span>POLITICAL COMMUNICATION</span><span>01 / 03</span></div>
+    <svg viewBox="0 0 420 300" role="presentation" focusable="false">
+      <g class="chart-grid"><path d="M20 55H400M20 115H400M20 175H400M20 235H400"/><path d="M80 25V265M160 25V265M240 25V265M320 25V265"/></g>
+      <path class="chart-line chart-line-a" d="M20 215 C65 200 75 95 130 125 S205 225 255 150 S330 70 400 92"/>
+      <path class="chart-line chart-line-b" d="M20 85 C75 110 85 180 140 165 S215 80 270 118 S345 205 400 185"/>
+      <circle class="chart-point point-a" cx="255" cy="150" r="5"/><circle class="chart-point point-b" cx="270" cy="118" r="5"/>
+      <path class="chart-guide" d="M255 150V265M270 118V265"/>
+    </svg>
+    <div class="visual-caption"><span>Media narratives</span><span>Public opinion</span><span>Political behavior</span></div>
+  </div>
+</section>
+
+<section class="featured-research">
+  <div class="section-kicker">CURRENT RESEARCH <span>01</span></div>
+  <div class="featured-body">
+    <div>
+      <p class="project-meta">M.A. THESIS <span>·</span> 2025–PRESENT</p>
+      <h2>Democracy in Motion: <em>Tracing Conceptual Drift in Turkish Newspapers</em></h2>
+    </div>
+    <div class="featured-description">
+      <p>How have Turkish newspapers invoked different conceptions of democracy between 2010 and 2026? I address this question with an original corpus of approximately 2.7 million articles and computational text analysis.</p>
+      <a class="text-link" href="{{ "research/" | relURL }}">Read about the project <span>↗</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="home-bottom">
+  <div class="interests-block">
+    <div class="section-kicker">RESEARCH INTERESTS <span>02</span></div>
+    <ul class="interest-list">
+      <li>Comparative politics</li>
+      <li>Political behavior & public opinion</li>
+      <li>Political communication & media</li>
+      <li>Political parties</li>
+      <li>Political economy</li>
+      <li>Democratic backsliding</li>
+    </ul>
+  </div>
+  <div class="methods-block">
+    <div class="section-kicker">METHODS & TOOLS <span>03</span></div>
+    <p class="methods-lead">I use computational and quantitative approaches to study political questions.</p>
+    <div class="method-tags"><span>Python</span><span>R</span><span>Stata</span><span>Text-as-Data</span><span>Word Embeddings</span><span>LLM-assisted Analysis</span><span>Survey Research</span></div>
+    <a class="text-link" href="{{ "data-code/" | relURL }}">Explore data & code <span>↗</span></a>
+  </div>
+</section>
+{{ end }}
