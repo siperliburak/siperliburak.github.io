@@ -1,49 +1,21 @@
 # Burak Siperli — Academic Website
 
-A custom Hugo academic website inspired by the modular structure of Favstats. It uses Markdown for content and a small custom CSS design rather than depending on a large theme.
+Personal academic website of me as a political science MA student at Sabancı University. The site brings together information about my research, publications and working papers, writing, teaching, and academic activities.
 
-## Local preview
+## Website
 
-1. Install Git and Hugo (standard edition) for Windows.
-2. Open PowerShell in this folder.
-3. Run:
+https://siperliburak.github.io/
 
-   ```powershell
-   hugo server
-   ```
+## Repository
 
-4. Open the local address shown by Hugo (normally http://localhost:1313/).
+This repository contains the source files for the website. The homepage is maintained in index.html, with styling and supporting files stored in the repository.
 
-## Publish with GitHub Pages
+## Updating the Website
 
-1. Create a new **public** GitHub repository named `siperliburak.github.io` under your account.
-2. In this folder, run:
+Website content and design are maintained through the files in this repository. Changes committed to the publishing branch are deployed through GitHub Pages using the repository's configured workflow.
 
-   ```powershell
-   git init
-   git add .
-   git commit -m "Initial academic website"
-   git branch -M main
-   git remote add origin https://github.com/siperliburak/siperliburak.github.io.git
-   git push -u origin main
-   ```
+For a text or link update, edit the relevant source file, commit the change, and check the latest deployment under the Actions tab.
 
-3. In the repository, open **Settings → Pages** and set the source to **GitHub Actions**.
-4. The workflow in `.github/workflows/deploy.yml` will build and deploy the site after a push.
-5. The initial address will be `https://siperliburak.github.io/`. A custom domain can be connected later.
+## Contact
 
-## Update content
-
-Edit the Markdown files in `content/`. Hugo rebuilds the site when you save changes while `hugo server` is running.
-
-## Before publishing
-
-- Review the biography and every date/title for accuracy.
-- Decide whether to publish a downloadable PDF CV; the current CV page is a web summary and does not expose the uploaded PDF.
-- Check whether thesis details, preliminary results, and research materials are cleared for public release.
-- Confirm that the email address and external profile links should be public.
-- Add a profile photograph only if you want one.
-
-## Domain
-
-The project is configured for the free GitHub Pages address initially. A custom domain can be selected later without changing the content structure.
+For academic enquiries or collaboration, please use the contact information on the website.
